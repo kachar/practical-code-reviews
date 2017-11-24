@@ -1,4 +1,8 @@
 # Practical Code Reviews
 
-Slides at https://slides.com/kachar/practical-code-reviews/
+### Slides
+https://slides.com/kachar/practical-code-reviews/
+
+### Pull Request with 4600 lines of code
+https://github.com/kachar/practical-code-reviews/pull/1
 

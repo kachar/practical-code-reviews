@@ -12,4 +12,10 @@ return [
         'base_uri' => 'https://api.github.com/',
         'auth' => ['user', 'token'],
     ],
+
+    'db' => [
+        'database' => 'database',
+        'user'     => 'user',
+        'password' => 'pass',
+    ],
 ];

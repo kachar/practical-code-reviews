@@ -1,0 +1,41 @@
+query($owner:String! $repository:String! $lastPulls:Int! $before:String) {
+    repository(owner: $owner, name: $repository) {
+    name
+    owner {
+      login
+    }
+    pullRequests(last: $lastPulls before: $before) {
+      edges {
+        node {
+          number
+          createdAt
+          mergedAt
+          updatedAt
+          # closedAt
+          mergeable
+          state
+          url
+          additions
+          deletions
+          participants {
+            totalCount
+          }
+          comments() {
+            totalCount
+          }
+          commits() {
+            totalCount
+          }
+          reviews() {
+            totalCount
+          }
+        }
+        cursor
+      }
+      pageInfo {
+        startCursor
+        hasNextPage
+      }
+    }
+  }
+}
